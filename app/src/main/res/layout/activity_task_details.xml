@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".TaskDetailsActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/transparentButton"
+        android:textColor="@color/blue"
+        android:text="Return"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:id="@+id/btn_task_details_return"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="New task"
+        android:id="@+id/et_task_details_name"
+        />
+
+    <View
+        style="@style/horizontalDivider"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/transparentButton"
+        android:textColor="@color/black"
+        android:text="@string/task_details_add_myday_text"
+        android:id="@+id/btn_task_details_add_to_myday"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/transparentButton"
+        android:textColor="@color/black"
+        android:text="@string/task_details_add_duedate_text"
+        android:id="@+id/btn_task_details_add_due_date"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/transparentButton"
+        android:textColor="@color/black"
+        android:text="@string/task_details_add_important"
+        android:id="@+id/btn_task_details_mark_important"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="left"
+        android:hint="@string/task_details_add_a_note"
+        android:id="@+id/et_task_details_side_note"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/transparentButton"
+        android:textColor="@color/light_red"
+        android:textSize="20sp"
+        android:text="Delete"
+        android:id="@+id/btn_task_details_delete"
+        />
+</LinearLayout>

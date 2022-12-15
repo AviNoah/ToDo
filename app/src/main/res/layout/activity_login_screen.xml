@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="15"
+    android:orientation="vertical"
+    tools:context=".LoginScreenActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        style="@style/transparentButton"
+        android:textColor="@color/black"
+        android:text="@string/add_an_account_login_page"
+        android:id="@+id/btn_log_in_screen_add_account"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        style="@style/transparentButton"
+        android:textColor="@color/black"
+        android:text="@string/manage_accounts_login_page"
+        android:id="@+id/btn_login_page_manage_accounts"
+        />
+
+    <View
+        style="@style/horizontalDivider"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/log_in_screen_text"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:id="@+id/lv_login_page_user_profiles"
+        />
+
+
+</LinearLayout>

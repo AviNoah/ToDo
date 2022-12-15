@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context=".TaskCategoriesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/transparentButton"
+            android:textColor="@color/blue"
+            android:gravity="left"
+            android:text="Return"
+            android:textSize="15sp"
+            android:id="@+id/btn_task_categories_return"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            style="@style/transparentButton"
+            android:textColor="@color/blue"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:text="@string/task_categories_screen_add_list_text"
+            android:id="@+id/btn_task_categories_add_new_list"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/task_categories_logged_in_as"
+        android:id="@+id/tv_task_categories_name"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:id="@+id/lv_task_categories_task_categories"
+        />
+</LinearLayout>

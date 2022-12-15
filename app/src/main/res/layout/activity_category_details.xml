@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="11"
+    tools:context=".CategoryDetailsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/category_details_title_text_create_list"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/tv_category_details_title"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/category_details_et_hint_text"
+        android:inputType="text"
+        android:id="@+id/et_category_details_list_name"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:text="@string/category_details_color_chooser_text"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/rg_category_details_colors"
+        >
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            style="@style/transparentButton"
+            android:textColor="@color/black"
+            android:text="Cancel"
+            android:gravity="right"
+            android:id="@+id/btn_category_details_return"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/transparentButton"
+            android:textColor="@color/blue"
+            android:text="Create list"
+            android:gravity="right"
+            android:id="@+id/btn_category_details_create_list"
+            />
+
+    </LinearLayout>
+</LinearLayout>

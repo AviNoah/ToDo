@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:id="@+id/ll_tasks_screen_main"
+    tools:context=".TasksScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="3"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/transparentButton"
+            android:textColor="@color/white"
+            android:id="@+id/btn_tasks_screen_return"
+            android:gravity="left"
+            android:text="Return"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            style="@style/transparentButton"
+            android:textColor="@color/white"
+            android:gravity="right"
+            android:textSize="24sp"
+            android:id="@+id/tv_tasks_screen_title"
+            android:text="category name"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/lv_tasks_screen_tasks"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/transparentButton"
+        android:textColor="@color/white"
+        android:text="@string/tasks_screen_add_task_text"
+        android:id="@+id/btn_task_screen_add_task"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

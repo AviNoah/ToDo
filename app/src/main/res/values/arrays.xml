@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array
+        name="colors">
+        <item>#FFF17A</item>
+        <item>#FFC063</item>
+        <item>#FF8A8A</item>
+        <item>#FF5858</item>
+        <item>#00BCD4</item>
+        <item>#03A9F4</item>
+        <item>#3F51B5</item>
+        <item>#9C27B0</item>
+        <item>#8BC34A</item>
+        <item>#ED77D4</item>
+        <item>#C3C3C3</item>
+    </array>
+</resources>
