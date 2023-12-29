@@ -39,3 +39,11 @@ The view is handles using XML under res/layout
 - activity_manage_accounts shows the user the **'manage accounts'** screen, will allows you to remove and add users currently registered to the device id of the device you are currently using.
 - activity_register shows the user the **'register account'** screen, which allows you to register an account to the database, and also to your current device id.
 - activity_task_details shows the **'task's details screen'** which allows you to modify tasks details like note, title, is important, is in my day, due date.
+- activity_tasks_screen shows the **'selected list screen'** which shows the tasks inside a list you've selected to view, it contains a hamburger menu on the top to export import or print a list, add a task, or click to view tasks.
+- custom_layout_user_profile is a generated view that inflates with user profile list info, it will show the user's generated profile picture which is the user's name initials on a random color background and his Email address and name.
+
+#### Inflator classes
+Classes that inflate data into views
+- AdapterUserProfileList handles inflating the custom_layout_user_profile xml view with user's email address and creating a profile picture based on the name initials.
+- NotificationAdapter handles inflating data onto notifications to notify users when their tasks are due outside of the app.
+- 
