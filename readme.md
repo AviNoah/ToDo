@@ -30,3 +30,11 @@ Please note that this project was made as a proof of concept, which is why user 
 - UserModel connects the UserProfileList data to a unique identifier in the database and its linked todo lists
 - TasksCategory handles data queried from the database related to to-do lists, it stores the unique identifier related to it in the database and the Task objects of the list 
 - Task handles data queried from the database related to to-do tasks, it stores the unique identifier related to the task and its contents
+
+### View
+The view is handles using XML under res/layout
+- activity_add_account shows the user the **'sign in'** account screen.
+- activity_category_details shows the user the **'to-do list edit'** screen where you change a list's color and name.
+- activity_login_screen is the **'main activity'** will be launched first, shows the user the 'select user' screen and the go to 'sign in' screen button or the go to 'manage accounts' button, if there are no accounts signed in, it will move the user directly to the 'sign in' screen **automatically**.
+- activity_manage_accounts shows the user the **'manage accounts'** screen, will allows you to remove and add users currently registered to the device id of the device you are currently using.
+- activity_register shows the user the **'register account'** screen.
