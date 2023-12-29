@@ -64,4 +64,4 @@ Classes that inflate data into views
 - CredentialsChecker is a helper class to **validate** email, password and other credentials.
 - DBHelper is a helper class that makes SQL requests and queries easier to integrate with the controllers and has common queries baked in.
 - ImportExport Helper makes use of the Common class to fetch file paths for export folder, and **[Karumi Dexter's](https://github.com/Karumi/Dexter)** permission request library to request Write permissions, to export and import lists as JSON's to a text file using **[GSON](https://github.com/google/gson)** for JSON serialization and deserialization.
-- PrintHelper handles requesting storage write permission to store the generated PDF file of the list you wish to print, it then uses PDFDocumentAdapter to move you to device's default print view. 
+- PrintHelper handles requesting storage write permission to store the generated PDF file using the **[itextpdf](https://github.com/itext/itext7)** PDF builder of the list you wish to print, it then uses PDFDocumentAdapter to move you to device's default print view. 
