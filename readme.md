@@ -21,7 +21,9 @@ Please note that this project was made as a proof of concept, which is why user 
 - Users has entities containing Name, Surname, Email, Password and a unique auto incrementing identifier integer.
 
 #### Relational tables
-
+- Lists-Tasks has entities linking the unique task identifier to a unique list identifier, allowing the same task to exist in multiple lists of multiple users and be updated dynamically across them.
+- Users-Lists has entities linking the unique list identifier to a unique user identifier, allowing the same list to exist in multiple users and be updated dynamically across all of them.
+- Devices-Users handles linking all users linked to a unique device ID fetches from the phone itself, so if the database is copied to another phone of a different device ID it will have different users in it, this is more of a proof of concept to handle a network of phones using the app with the database being stored on a server.
 
 ### Model
 - UserProfileList class stores personal data related to the user
