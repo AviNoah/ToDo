@@ -8,6 +8,7 @@
 
 This project uses a MVC model design pattern and was made for my highschool project in 2022
 it was made using Android studio Arctic Fox v2020.3.1 in Java
+The java scripts are in the app\src\main\java\com\example\todo
 
 Please note that this project was made as a proof of concept, which is why user data is completely local and is stored unencrypted in the database
 
