@@ -48,3 +48,14 @@ Classes that inflate data into views
 - NotificationAdapter handles inflating data onto notifications to notify users when their tasks are due outside of the app.
 - PDFDocumentAdapter extends android printDocumentAdapter to handle sending files to the device's default print view.
 - PrintHelper handles requesting storage write permission to store the generated PDF file of the list you wish to print, it then uses PDFDocumentAdapter to move you to device's default print view. 
+
+
+### Controller
+- AddAccountActivity handles the activity_add_account View with the UserModel Model.
+- CategoryDetailsActivity handles the activity_category_details View with the TasksCategory Model.
+
+
+### Helper files
+- Common handles fetching common file paths, like the app's path to adhere to **Android 11+'s Scoped Storage** and the print and export folders the app creates.
+- CredentialsChecker is a helper class to **validate** email, password and other credentials.
+- DBHelper is a helper class that makes SQL requests and queries easier to integrate with the controllers and has common queries baked in.
