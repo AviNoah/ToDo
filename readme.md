@@ -26,7 +26,7 @@ Please note that this project was made as a proof of concept, which is why user 
 - Devices-Users handles linking all users linked to a unique device ID fetches from the phone itself, so if the database is copied to another phone of a different device ID it will have different users in it, this is more of a proof of concept to handle a network of phones using the app with the database being stored on a server.
 
 ### Model
-- UserProfileList class stores personal data related to the user
+- UserProfileList class handles data queried from the database related top personal user data, it also stores the unique identifier related to the user
 - UserModel connects the UserProfileList data to a unique identifier in the database and its linked todo lists
 - TasksCategory handles data queried from the database related to to-do lists, it stores the unique identifier related to it in the database and the Task objects of the list 
-- Task handles data queries from the database related to to-do tasks, it stores the unique identifier related to the task and its contents
+- Task handles data queried from the database related to to-do tasks, it stores the unique identifier related to the task and its contents
