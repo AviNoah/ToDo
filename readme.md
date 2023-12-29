@@ -47,7 +47,6 @@ Classes that inflate data into views
 - AdapterUserProfileList handles inflating the custom_layout_user_profile xml view with user's email address and creating a profile picture based on the name initials.
 - NotificationAdapter handles inflating data onto notifications to notify users when their tasks are due outside of the app.
 - PDFDocumentAdapter extends android printDocumentAdapter to handle sending files to the device's default print view.
-- PrintHelper handles requesting storage write permission to store the generated PDF file of the list you wish to print, it then uses PDFDocumentAdapter to move you to device's default print view. 
 
 
 ### Controller
@@ -60,3 +59,4 @@ Classes that inflate data into views
 - CredentialsChecker is a helper class to **validate** email, password and other credentials.
 - DBHelper is a helper class that makes SQL requests and queries easier to integrate with the controllers and has common queries baked in.
 - ImportExport Helper makes use of the Common class to fetch file paths for export folder, and **[Karumi Dexter's](https://github.com/Karumi/Dexter)** permission request library to request Write permissions, to export and import lists as JSON's to a text file using **[GSON](https://github.com/google/gson)** for JSON serialization and deserialization.
+- PrintHelper handles requesting storage write permission to store the generated PDF file of the list you wish to print, it then uses PDFDocumentAdapter to move you to device's default print view. 
