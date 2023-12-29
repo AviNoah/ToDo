@@ -33,8 +33,9 @@ Please note that this project was made as a proof of concept, which is why user 
 
 ### View
 The view is handles using XML under res/layout
-- activity_add_account shows the user the **'sign in'** account screen.
+- activity_add_account shows the user the **'sign in'** account screen, which allows you to sign in to an account already registered in the database and load his data and connect it to your current device id.
 - activity_category_details shows the user the **'to-do list edit'** screen where you change a list's color and name.
 - activity_login_screen is the **'main activity'** will be launched first, shows the user the 'select user' screen and the go to 'sign in' screen button or the go to 'manage accounts' button, if there are no accounts signed in, it will move the user directly to the 'sign in' screen **automatically**.
 - activity_manage_accounts shows the user the **'manage accounts'** screen, will allows you to remove and add users currently registered to the device id of the device you are currently using.
-- activity_register shows the user the **'register account'** screen.
+- activity_register shows the user the **'register account'** screen, which allows you to register an account to the database, and also to your current device id.
+- activity_task_details shows the **'task's details screen'** which allows you to modify tasks details like note, title, is important, is in my day, due date.
