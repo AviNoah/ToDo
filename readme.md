@@ -46,4 +46,5 @@ The view is handles using XML under res/layout
 Classes that inflate data into views
 - AdapterUserProfileList handles inflating the custom_layout_user_profile xml view with user's email address and creating a profile picture based on the name initials.
 - NotificationAdapter handles inflating data onto notifications to notify users when their tasks are due outside of the app.
-- 
+- PDFDocumentAdapter extends android printDocumentAdapter to handle sending files to the device's default print view.
+- PrintHelper handles requesting storage write permission to store the generated PDF file of the list you wish to print, it then uses PDFDocumentAdapter to move you to device's default print view. 
