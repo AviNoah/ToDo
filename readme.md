@@ -31,7 +31,7 @@ Please note that this project was made as a proof of concept, which is why user 
 
 
 ### Model
-- UserProfileList class handles data queried from the database related top personal user data, it also stores the unique identifier related to the user
+- UserProfileList class handles data queried from the database related to personal user data, it also stores the unique identifier related to the user
 - UserModel connects the UserProfileList data to a unique identifier in the database and its linked todo lists
 - TasksCategory handles data queried from the database related to to-do lists, it stores the unique identifier related to it in the database and the Task objects of the list 
 - Task handles data queried from the database related to to-do tasks, it stores the unique identifier related to the task and its contents
