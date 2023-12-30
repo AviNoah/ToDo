@@ -19,7 +19,7 @@ Please note that this project was made as a proof of concept, which is why user 
 ### Database
 - The database has 3 Tables and 3 Relational tables
 #### Data tables
-- Tasks has entities containing Title, Note, as well as Day, Month Year integers for due date and is_important and is_in_my_day which are both booleans, as well as a unique auto incrementing identifier integer.
+- Tasks has entities containing Title, Note, as well as Day, Month and Year integers for due date and is_important and is_in_my_day which are both booleans, as well as a unique auto incrementing identifier integer.
 - Lists has entities containing Title and Color which are strings and a unique auto incrementing identifier integer.
 - Users has entities containing Name, Surname, Email, Password and a unique auto incrementing identifier integer.
 
